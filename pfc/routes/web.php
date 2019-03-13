@@ -1,5 +1,5 @@
 <?php
 
-Route::get('/', 'FileUploadController@cadastroDocumento');
+Route::get('/', 'UploadController@formularioDocumento');
 
-Route::post('/register', 'FileUploadController@upload');
+Route::post('/register', 'UploadController@upload');
