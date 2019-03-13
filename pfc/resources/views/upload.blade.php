@@ -4,7 +4,7 @@
     @csrf   
 
     <div class="container">
-        <form action="/funcionario/cadastrar" method="POST">
+        <form action="/register" method="POST">
           @csrf
             <div class="form-group">
               <label>Nome funcionário</label>
