@@ -53,5 +53,20 @@ class UploadController extends Controller
 
         endif;
 
+        return redirect('/lista');
+    }
+
+    public function lista(){
+
+        $funcionario = Funcionario::all();
+
+
+        $arquivo = Documento::all();
+
+
+        return view('lista')
+               ->with('fun', $funcionario)
+               ->with('arq', $arquivo);
+            
     }
 }
